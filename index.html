@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
+  </head> 
   <body>
     <header class="header">
       <div class="container">
@@ -26,25 +26,28 @@
               alt="logo for Xiaomi"
             />
           </a>
-         
+         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="#" class="menu__link">Описание</a>
+              <a href="#info" class="menu__link">Описание</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Характеристики</a>
+              <a href="#characteritics" class="menu__link">Характеристики</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">стоимость</a>
+              <a href="#price" class="menu__link">стоимость</a>
             </li>
           </ul>
+          </nav>
           </div>
         </div>
       </div>
     </header>
+    
     <section class="bike ">
         <div class="container">
         <div class="bike__inner">
+          <div class="bike__column">
                 <h1 class="bike__title">Xiaomi Himo C26</h1>
                 <h3 class="bike__subtitle">Электрический велосипед</h3>
                 <p class="bike__text">
@@ -60,10 +63,11 @@
                 7-скоростная трансмиссия и эргономичное сидение делают каждую поездку
                 гораздо приятнее.
                 </p>
-                <a class="bike__link" href="#">ЗАКАЗАТЬ</a>
+                <a class="bike__link" href="#price">ЗАКАЗАТЬ</a>
             </div>
+            
             <div class="bike__column bike__column-slider">
-            <div class="bike__slider">
+              <div class="bike__slider">
                 <img
                 src="./images/bike1.jpg"
                 alt="byle photo 1"
@@ -107,11 +111,13 @@
                   <span class="bike__list-num">25 кг</span>
                 <span class="bike__list-text">вес</span>
                 </li>
-            </ul>
+                </ul>
+              </div>
             </div>
         </div> 
     </section>
-    <section class="info">
+    
+    <section class="info" id="info">
       <div class="container">
         <div class="info__inner">
           <img src="./images/info-img.jpg" alt="Инфо о байке" class="info__img">
@@ -170,7 +176,8 @@
         </div>
       </div>
     </section>
-    <section class="characteritics">
+    
+    <section class="characteritics" id="characteritics">
       <div class="container">
         <h4 class="characteritics__head">
           Характеристики
@@ -358,6 +365,7 @@ Shimano Tourney (прогулочный)
         </div>
       </div>
     </section>
+    
     <div class="slider">
       <div class="container">
         <div class="slider__items">
@@ -373,7 +381,8 @@ Shimano Tourney (прогулочный)
         </div>
       </div>
     </div>
-    <section class="price">
+    
+    <section class="price" id="price">
       <div class="container">
         <div class="price__inner">
           <form action="" class="form">
@@ -391,7 +400,7 @@ Shimano Tourney (прогулочный)
                 <input class='form__input-radio' type="radio" name="radio">
                 <div class="form__bike">
                   <img class="form__bike-img" src="./images/bike-grey.jpg" alt="bike-grey">
-                  <p class="form-bike-price">33999 руб.</p>
+                  <p class="form-bike-price"><span>33999 руб.</span></p>
                 </div>
                 <div class="form__radio-style form__radio-style--grey"></div>
               </label>
@@ -399,7 +408,7 @@ Shimano Tourney (прогулочный)
                 <input class='form__input-radio' type="radio" name="radio" checked>
                 <div class="form__bike">
                   <img class="form__bike-img" src="./images/bike-white.jpg" alt="bike-white">
-                  <p class="form-bike-price">32999 руб.</p>
+                  <p class="form-bike-price"><span>32999 руб.</span></p>
                 </div>
                 <div class="form__radio-style form__radio-style--white"></div>
               </label>
@@ -407,7 +416,7 @@ Shimano Tourney (прогулочный)
                 <input class='form__input-radio' type="radio" name="radio">
                 <div class="form__bike">
                   <img class="form__bike-img" src="./images/bike-red.jpg" alt="bike-red">
-                  <p class="form-bike-price">35999 руб.</p>
+                  <p class="form-bike-price"><span>35999 руб.</span></p>
                 </div>
                 <div class="form__radio-style form__radio-style--red"></div>
               </label>
@@ -418,7 +427,31 @@ Shimano Tourney (прогулочный)
       </div>
     </section>
     
-
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="footer__link">Политика     конфиденциальности</a>
+          <div class="footer_social">
+            <a class="footer_social-link" href="#">
+              <img class="footer_social-img" src="./images/inst.svg" alt="inst-link">  
+            </a>
+            <a class="footer_social-link" href="./images/inst.svg">
+              <img class="footer_social-img" src="./images/facebook.svg" alt="facebook-link">
+            </a>
+          </div>
+          <div class="footer__contacts">
+            <a class="footer__contacts-link" href="tel:+79817248699">
+              <img class="footer__contacts-img" src="./images/phone.svg" alt="phone">
+              <span>+7(981)-724-8699</span>
+            </a>
+            <a class="footer__contacts-link" href="mailto:9812598@gmail.com">
+              <img class='footer__contacts-img' src="./images/mail.svg" alt="mail">
+              <span>9812598@gmail.com</span>  
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
